@@ -1,9 +1,8 @@
 {
   "name": "research-paper-assistant",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "AI copilot for academic writing targeting top-tier computer science conferences.",
   "author": "Minhu Wang <minhuw@acm.org>",
   "keywords": ["research", "paper", "writing", "academic", "LaTeX"],
-  "commands": ["commands"],
-  "agents": ["agents"]
+  "skills": ["skills"]
 }
