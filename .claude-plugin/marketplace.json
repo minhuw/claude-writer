@@ -1,0 +1,24 @@
+{
+  "name": "claude-writer",
+  "owner": {
+    "name": "Minhu Wang",
+    "email": "minhuw@acm.org"
+  },
+  "metadata": {
+    "description": "AI copilot for academic writing targeting top-tier computer science conferences."
+  },
+  "plugins": [
+    {
+      "name": "research-paper-assistant",
+      "source": "./",
+      "description": "AI copilot for academic writing targeting top-tier computer science conferences.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Minhu Wang",
+        "email": "minhuw@acm.org"
+      },
+      "repository": "https://github.com/minhuw/claude-writer",
+      "keywords": ["research", "paper", "writing", "academic", "LaTeX"]
+    }
+  ]
+}
