@@ -17,7 +17,7 @@ Evaluate research paper text for logical flow, structure, clarity, and readabili
 
 ## Target Audience
 
-Graduate students, professors, and researchers writing for top-tier computer science conferences (e.g., OSDI, NSDI, SOSP, SIGCOMM).
+Graduate students, professors, and researchers writing for top-tier computer science conferences (e.g., OSDI, NSDI, SOSP, SIGCOMM, ISCA, MICRO, HPCA, ASPLOS).
 
 ## Evaluation Criteria
 
