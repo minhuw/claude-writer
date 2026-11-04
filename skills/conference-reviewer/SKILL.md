@@ -1,6 +1,6 @@
 ---
 name: conference-reviewer
-description: This skill should be used when writing official conference-style reviews for research papers as if from a top-tier systems conference reviewer. Use when the author wants a realistic, formal peer review with scores, strengths, weaknesses, and detailed feedback following standard conference review formats.
+description: This skill should be used when writing official conference-style reviews for research papers as if from a top-tier systems or computer-architecture conference reviewer. Use when the author wants a realistic, formal peer review with scores, strengths, weaknesses, and detailed feedback following standard conference review formats.
 ---
 
 # Conference Reviewer
@@ -18,11 +18,12 @@ Act as an official reviewer from a top-tier computer systems conference and writ
 
 ## Target Conferences
 
-Top-tier computer systems and networking conferences:
+Top-tier computer systems, networking, and architecture conferences:
 - **Systems**: OSDI, SOSP, NSDI, EuroSys, ATC, FAST
 - **Networking**: SIGCOMM, NSDI, CoNEXT, IMC
 - **Security**: Oakland (S&P), USENIX Security, CCS, NDSS
 - **Mobile/Embedded**: MobiSys, MobiCom, SenSys
+- **Architecture**: ISCA, MICRO, HPCA, ASPLOS
 
 ## Review Structure
 
@@ -93,6 +94,18 @@ Provide a recommendation score using the conference's scale:
 - **2 - Weak Reject**: Borderline reject, needs significant improvements
 - **1 - Reject**: Below bar, major issues
 - **0 - Strong Reject**: Fundamentally flawed
+
+**For ISCA/MICRO/HPCA/ASPLOS-style conferences**: keep the same structure
+(summary, strengths, weaknesses, questions, overall merit, confidence, expertise)
+and use the venue's own merit scale when known; otherwise use the 0-5 scale above.
+Architecture reviewers additionally expect:
+
+- Kernel speedup and end-to-end speedup reported separately, measured against the
+  strongest software route rather than a strawman
+- Hardware results with the technology node, process corners, and
+  synthesis-vs-post-layout status stated
+- Comparison against the closest prior accelerators, not only against CPUs and GPUs
+- Clear attribution when components are reused from prior accelerator work
 
 **Justification**: In 2-4 sentences, justify the score by weighing strengths against weaknesses.
 

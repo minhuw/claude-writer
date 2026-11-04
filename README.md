@@ -26,3 +26,10 @@ claude plugin install research-paper-assistant
 - `/selection` - Improve selected text
 - `/summary` - Summarize paper content
 - `/validation` - Validate academic writing conventions
+
+## Target Conferences
+
+The review skills (`/paper-validator`, `/conference-reviewer`) cover systems,
+networking, security, and mobile venues, plus the top computer-architecture
+conferences (ISCA, MICRO, HPCA, ASPLOS). State the target venue when invoking a
+skill so it applies the right review lens.

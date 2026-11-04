@@ -13,7 +13,7 @@ Conduct comprehensive, critical reviews of research papers targeting top-tier co
 - Conducting peer-review-style analysis of academic papers
 - Identifying logical gaps, unclear statements, and missing evidence
 - Analyzing paper structure and flow across sections
-- Preparing papers for conferences like OSDI, NSDI, SOSP, SIGCOMM
+- Preparing papers for conferences like OSDI, NSDI, SOSP, SIGCOMM, ISCA, MICRO, HPCA, ASPLOS
 - Getting critical feedback before actual submission
 
 ## Core Principles
@@ -100,6 +100,29 @@ Act as a critical but constructive peer reviewer, focusing on six key areas:
 - Flag inconsistencies between sections
 - Check for missing context or background
 
+### Architecture-Conference Lens (ISCA, MICRO, HPCA, ASPLOS)
+
+When the paper targets a computer-architecture venue, additionally check:
+
+**Workload and motivation**
+- Is the kernel or workload characterization drawn from real use (traces, closed-loop runs, deployed systems) rather than a toy benchmark?
+- Are problem sizes and operating frequencies stated and justified?
+
+**Baseline fairness**
+- Is the software baseline the strongest available route (same algorithm, tuned implementation, stated precision), not a strawman?
+- Are GPU baselines measured at the batch sizes the target use actually offers?
+- Are kernel-level and end-to-end speedups both reported (Amdahl), with the accelerated fraction stated?
+
+**Hardware methodology**
+- Are synthesis and post-layout (place-and-route) results distinguished, with the technology node and process corners stated?
+- Are cycle counts identified as cycle-accurate simulation or analytical estimates?
+- Are area, power, and energy reported at a stated node, with cross-node comparisons labeled as approximate?
+
+**Novelty and positioning**
+- Is the mechanism new, or a known technique re-applied? Either can be fine, but the paper must be explicit.
+- Is the paper compared against the closest prior accelerators, not only against CPUs and GPUs?
+- When components are reused from prior accelerator work, is the reuse attributed and the new contribution isolated?
+
 ## Output Format
 
 Frame feedback as reviewer questions or constructive criticisms:
@@ -161,4 +184,5 @@ Research papers targeting top-tier computer science conferences:
 - Systems: OSDI, NSDI, SOSP, EuroSys, ATC
 - Networking: SIGCOMM, NSDI, CoNEXT
 - Security: Oakland, USENIX Security, CCS, NDSS
+- Architecture: ISCA, MICRO, HPCA, ASPLOS
 - Other top-tier CS conferences
